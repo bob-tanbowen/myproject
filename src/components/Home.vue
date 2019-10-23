@@ -11,18 +11,17 @@
 </template>
 
 <script>
- import ad from './project/adversion.vue'  
- import chat from './project/chat.vue'
+ import Ad from '@/components/Adversion'  
+ import Chat from '@/components/Chat'
 export default {
-  components: {ad,chat},  
   data () {
     return {
       msg: '天 码 行 空 项 目 组',
       radio: '1'
     }
   },
-  created(){
-    // console.log($);
+  components:{
+    Ad,Chat
   }
 }
 </script>

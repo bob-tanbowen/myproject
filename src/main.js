@@ -1,17 +1,20 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import axios from "axios";
 import store from "./store";
+import axios from "axios";
+
 Vue.config.productionTip = false;
-Vue.prototype.axios=axios;
-axios.defaults.baseURL="http://127.0.0.1:4000/"
+Vue.prototype.axios = axios;
+
+axios.defaults.baseURL = "http://127.0.0.1:5050/";
 // 引入elementui
-import ElementUI from "element-ui"
+import ElementUI from "element-ui";
 // 引入所有样式
-import 'element-ui/lib/theme-chalk/index.css';
+import "element-ui/lib/theme-chalk/index.css";
 // 使用elementui
 Vue.use(ElementUI);
+
 new Vue({
   router,
   store,
